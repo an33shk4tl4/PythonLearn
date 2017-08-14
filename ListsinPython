@@ -31,3 +31,13 @@ values = [1,2,3,4,5,6,7]
 week_dict = dict(zip(keys,values))
 print week_dict
 
+#delete/remove a list item by value 
+del list[index]
+
+#to get index of an item in a list
+list.index('<value>') 
+# watch out for duplicate values and the index , 
+#it behaves weird when index is called on a value that has duplicates in the list
+
+list.remove  #another method to remove a list item by value
+
