@@ -23,3 +23,10 @@ print "logfile date " , datetime.date.today().strftime('%d-%m-%Y')
 
 mydate = datetime.date(1985,12,26)
 print mydate.strftime("%A")
+
+dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=0.25)
+dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(6./24))
+dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(2.5/24))
+dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(2.5/24))
+dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(2.55/24))
+
