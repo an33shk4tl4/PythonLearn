@@ -90,15 +90,48 @@
 #
 # print(menu1('wine1.' , 'entree1..'))
 
-def print_args(*args):
-    """this is a function to
-    accept *args and return a tuple of positional parameters.
-    It accepts multiple arguments and prints out a set - removes duplicates
-    -trailing spaces taken care of """
-    print('Positional argument tuple' , args)
-    print set([str(x).strip() for x in args])
+# def print_args(*args):
+#     """this is a function to
+#     accept *args and return a tuple of positional parameters.
+#     It accepts multiple arguments and prints out a set - removes duplicates
+#     -trailing spaces taken care of """
+#     print('Positional argument tuple' , set(args))
+#     print(dict(zip(range(len(args)), args)))
+#
+# print_args('Hello','Aneesh', 100,1000,'Hello','Aneesh')
+# # print print_args.__doc__
 
+# def print_kwargs(**kwargs):
+#     print 'Keyword Arguments', kwargs
+#
+# print_kwargs(usa = 'dc', india = 'delhi')
 
-print_args('Hello',' Aneesh', 100,1000,'Hello','Aneesh')
-print print_args.__doc__
+# def answer():
+#     print(42)
+#
+# answer()
+#
+# def call_some_function(func):
+#     func()
+#
+# # answer = 10
+# answer()
+#
+# call_some_function(answer)
 
+def outerfunction():
+    def inner_func(a,b):
+        print("this is inner function call")
+        print ('inner function - sum of {} , {} '.format(a, b), a+b)
+        def whatever():
+            print "this is a whatever double inner function"
+        whatever()
+        return (a + b)
+    print("this is outer function call")
+    inner_func(1,3)
+    print inner_func(10,23)
+
+    # return inner_func(01,23)
+
+# print outerfunction()
+outerfunction()
