@@ -12,4 +12,3 @@ def h(char='-', repeat=80):
 h()
 
 # h('_')
-#TODO create a function to spill out random characters to make a hline
