@@ -1,3 +1,6 @@
+from theano.misc import check_multi_gpu
+
+
 def h(char='-', repeat=80):
     """
     function to print repeat characters
@@ -12,3 +15,4 @@ def h(char='-', repeat=80):
 h()
 
 # h('_')
+
