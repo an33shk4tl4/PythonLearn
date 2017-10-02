@@ -1,7 +1,5 @@
-from theano.misc import check_multi_gpu
 
-
-def h(char='-', repeat=80):
+def h(repeat=80):
     """
     function to print repeat characters
     very handy to draw a horizontal line for logging purpose
@@ -12,7 +10,5 @@ def h(char='-', repeat=80):
     # print char[0]*repeat
     print random.choice(sq)*repeat
 
-h()
-
-# h('_')
-
+if __name__ == '__main__':
+    h()
