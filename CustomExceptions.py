@@ -4,7 +4,8 @@ class UpperCaseException(Exception):
 
 words = ['hello','world', '2017', 'CAp']
 words = []
-if all():
+
+
 
 
 if any(words):
