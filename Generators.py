@@ -17,3 +17,34 @@ print 'Type of ge = ', type(ge)
 for i in ge:
     print i
 
+#TODO
+# n = yield n --> check this out on Jeff Knupp's blog its about
+# sending values to generator function, yet to learn this concept
+
+
+print """
+*****proper understanding of generators
+A generator is a function which returns a iterable
+any function with yield keyword is a generator
+Generator input arguments optional
+variable = some_generator_function() returns iterable object that
+            can be consumed using next(variable)
+For example:
+a = gen_list_nums()
+
+print next(a) , next(a),next(a) , next(a),next(a) , next(a)
+print a.next(), a.next(), a.next(), a.next()
+
+"""
+
+def gen_list_nums():
+    n = 0
+    while n < 100:
+        yield n
+        n += 1
+
+a = gen_list_nums()
+
+print next(a) , next(a),next(a) , next(a),next(a) , next(a)
+print a.next(), a.next(), a.next(), a.next()
+
