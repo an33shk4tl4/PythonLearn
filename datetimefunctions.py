@@ -22,11 +22,12 @@ print "Day of week: ", datetime.date.today().strftime("%A")
 print "logfile date " , datetime.date.today().strftime('%d-%m-%Y')
 
 mydate = datetime.date(1985,12,26)
-print mydate.strftime("%A")
+print "format time from a given datetime type" , mydate.strftime("%A")
 
-dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=0.25)
-dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(6./24))
-dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(2.5/24))
-dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(2.5/24))
-dt.datetime.strptime('2017 09 06' , '%Y %m %d') + dt.timedelta(days=(2.55/24))
+dt1 = datetime
+print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=0.25)
+print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(6. / 24))
+print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(2.5 / 24))
+print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(2.5 / 24))
+print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(2.55 / 24))
 
