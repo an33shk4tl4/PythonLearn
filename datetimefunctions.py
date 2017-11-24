@@ -30,4 +30,3 @@ print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(6. /
 print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(2.5 / 24))
 print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(2.5 / 24))
 print dt1.datetime.strptime('2017 09 06', '%Y %m %d') + dt1.timedelta(days=(2.55 / 24))
-
