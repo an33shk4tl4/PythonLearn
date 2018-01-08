@@ -16,11 +16,11 @@ t2 = threading.Timer(3, delayed)
 t2.setName('t2')
 
 logging.debug('starting timers')
-t1.start()
-t2.start()
+t1.start(), t2.start()
 
 logging.debug('waiting before canceling %s', t2.getName())
 time.sleep(2)
 logging.debug('canceling %s', t2.getName())
 t2.cancel()
+print ("thread {} is {}".format(t1.getName(),t1.isAlive()))
 logging.debug('done')
